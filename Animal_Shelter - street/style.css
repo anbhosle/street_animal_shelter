@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    outline: none; 
+    border: none;
+  
+}
+
+*::selection{
+    background-color: #eee;
+    color: #111;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background: gray;
+} 
+
+body{
+    /*background: rgb(150, 110, 176);*/
+    overflow-x: hidden;
+    /* padding-left: 35rem;    */
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: rgb(51, 51, 51);
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: rgb(108, 102, 102);
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #111;
+    color: #111;
+    padding-bottom: 1rem;
+}
+
+.heading span{
+    color: rgb(229, 174, 22);
+}
+
+.header{
+    background: #1a1a1a;
+    display: flex;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+  .header a {
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+  }
+
+  .header a:hover {
+    color: #f1f1f1;
+  }
+  
+  .header .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+  }
+
+header .navbar{
+    width: 100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+header .navbar ul img{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 3rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+header .navbar ul li a:hover{
+    background: #333;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 3rem;
+    background: rgb(150, 110, 176);
+}
+
+.home img{
+    height: 25rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 1rem solid rgb(60, 60, 47);
+}
+
+
+.home h3{
+    font-size: 2.5rem;
+    color: #111;   
+    text-align: center;  
+}
+
+.home h1 span{
+    font-size: 5rem;
+    color: #111;
+    border-bottom: .2rem solid rgb(250, 248, 241);
+}
+
+.home h1{
+    font-size: 5rem;
+    color: #111;
+    text-align: center;
+}
+
+
+.home p{
+    font-size: 2rem;
+    color: #111;
+    padding: 1rem 0;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.about{
+    background:rgb(187, 224, 228);
+}
+
+.about .row{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.about .row .info{
+    display: flexbox ;
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info p{
+    padding-left: 3rem;
+    font-size: 2rem;
+    color: #111;
+    line-height: 3rem;
+}
+
+.about .row .info img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 1rem;
+    border-radius: 50%;
+}
+
+.animals{
+    background-color:rgb(187, 224, 228);
+}
+
+.animals .user{
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.animals .user h3 {
+    font-size: 4rem;
+    color: rgb(132, 65, 210);
+    word-spacing: 2px;
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+
+}
+
+.animals .user img{
+    margin-left: 2rem;
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.animals .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-left: 3rem;
+}
+
+.animals .box-container .box{
+    width: 30rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    padding-left: 3rem;
+    border-left: .2rem solid #111;
+    position: relative;
+}
+
+.animals .box-container .box img{
+    max-width: 60%;
+    border-radius: 30%;
+    margin-bottom: 1.5rem;
+}
+
+.animals .box-container .box h4{
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    display: inline-block;
+    margin-left: 8px;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+.animals .box-container .box h3{
+    font-size: 2rem;
+    color: #111;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.animals .box-container .box .info h3{
+    font-size: 2rem;
+    color: #111;
+    font-weight: normal;
+}
+
+.animals .box-container .box .info p{
+    font-size: 2rem;
+    color: #111;
+    font-weight: normal;
+}
+
+.animals .box-container .box .info h3 span{
+    color: rgb(132, 65, 210);
+    padding: 0 .5rem;
+}
+
+.animals .box-container .box .info p span{
+    color: rgb(132, 65, 210);
+    padding: 0 .5rem;
+}
+
+.help{
+    background-color:rgb(187, 224, 228);
+}
+
+.help .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-left: 3rem;
+}
+
+.help .container .item{
+    width: 20rem;
+    margin: 1rem;
+    margin-bottom: 4rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.help .container .item img{
+    max-width: 70%;
+    margin-bottom: 2rem;
+}
+
+.help .container .item .name_item{
+    font-size: 1.5rem;
+    background: #222;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+}
+
+.contact{
+    background-color:rgb(16, 134, 108);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;                                                                                
+    flex-wrap: wrap;
+    padding-left: 10rem;
+}
+
+.contact .row .contact_info{
+    flex: 1 1 1 30rem;
+    padding: 6rem;
+    padding-bottom: 0;
+}
+
+.contact .row .contact_info .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .contact_info .info h3{
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding-bottom: 2rem;
+}
+
+.contact .row .contact_info .info h3 img{
+    padding-right: 5rem;
+}
+
+.contact .row .contact_info .info h3 a{
+    padding-right: 5rem;
+    color: rgb(255, 255, 255);
+}
+
+
+.contact .row .visit{
+    flex: 1 1 30rem;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.contact .row .visit .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .visit .info h3{
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    padding-bottom: 3rem;
+}
+
+.contact .row .visit .info h3 img{
+    padding-right: 5rem;
+}
+
+
+
+
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding: 1rem rem;
+    }
+
+}
+
+@media (max-width: 991px){
+
+    header{
+        left:-120%;
+    }
+
+    body{
+        padding: 0;
+    }
+
+    .contact .row{
+        display: block;
+        text-align: left;
+    }
+
+    .contact .row .visit{
+        margin: 5rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    header{
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width: 400px){
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin: 0.3rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

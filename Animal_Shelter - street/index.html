@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Shelter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+        <nav class="navbar">
+            <ul>
+                <img src="image/logo_Animal_Shelter.jpg" alt="">
+                <li><a href="#home">Home</a></li>
+                <li><a href="index1.html">Our animals</a></li>
+                <li><a href="#help"> Help Center</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--<div id="menu" class="fas fa-bars"></div>-->
+
+    <div id="main">
+        <section class="home" id="home">
+
+            <div>
+                <button class="openbtn" onclick="openNav()">☰ </button>
+            </div>
+            
+            <img src="image/street3.jpg" alt="">
+            <h3>HI THERE !</h3>
+            <h1>It's <span>Nidhi Jiv Aashray</span></h1>
+            <p>Not only human need shelter!! These animals also need a shelter, food, care and love. They are the
+                only
+                creatures that envolved enough to
+                convey pure love. We are requesting to visit us, adopt them and give them a chance to leave happy
+                with
+                lots of
+                love.
+            </p>
+            <a href="#about"><button class="btn">About The Shelter <i class="fa fa-heart"></i></button></a>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading"><span>About</span> The Sheter </h1>
+            <div class="row">
+                <div class="info">
+                    <p> Our shelter is a place where stray, lost, abandoned or surrendered animals which are dogs and
+                        cats
+                        are housed. Currently we have 121 dogs and 250 cats on our hands and
+                        statistics show that only 20% of them will find a family. The others will continue to live with
+                        us
+                        and will be waiting for a lucky chance to become dearly loved. We feed our wards with the best
+                        food
+                        and make sure that they do not get sick, feel comfortable (including psychologically) and
+                        well. We are supported by 40 volunteers and 20 employees of various skill levels. About 12% of
+                        the
+                        animals are taken by the shelter staff. Taking care of the animals, they become attached
+                        to the pets and would hardly ever leave them alone.</p>
+                    <img src="image/street.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="help" id="help">
+            <h1 class="heading"><span>Help</span> Centre </h1>
+            <div class="container">
+                <div class="item">
+                    <img src="image/pet-food.png" alt="Pet food" />
+                    <div class="name_item">Pet food</div>
+                </div>
+                <div class="item">
+                    <img src="image/toys.png" alt="Toys" />
+                    <div class="name_item">Toys</div>
+                </div>
+                <div class="item">
+                    <img src="image/pet_bowl.png" alt="Bowls and cups" />
+                    <div class="name_item">Bowls and cups</div>
+                </div>
+                <div class="item">
+                    <img src="image/shampoo.png" alt="Shampoos" />
+                    <div class="name_item">Shampoos</div>
+                </div>
+                <div class="item">
+                    <img src="image/vitamin.png" alt="Vitamins" />
+                    <div class="name_item">Vitamins</div>
+                </div>
+                <div class="item">
+                    <img src="image/medicine.png" alt="Medicines" />
+                    <div class="name_item">Medicines</div>
+                </div>
+                <div class="item">
+                    <img src="image/dog-collar.png" alt="Collars / leashes" />
+                    <div class="name_item">Collars / leashes</div>
+                </div>
+                <div class="item">
+                    <img src="image/pet-house.png" alt="Sleeping areas" />
+                    <div class="name_item">Sleeping areas</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>Contact</span> Us </h1>
+            <div class="row">
+                <div class="contact_info">
+                    <h3 class="title">Contact info</h3>
+                    <div class="info">
+                        <h3><img src="image/icons8-mail-50.png" alt=""> anbhosle@mitaoe.ac.in</h3>
+                        <h3><img src="image/icons8-phone-50.png" alt=""> +91-9421049986</h3>
+                        <h3><img src="image/icons8-instagram-50.png" alt=""><a
+                                href="https://instagram.com/nidhi_jeev_ashray?igshid=YmMyMTA2M2Y="> @nidhi_jeev_ashray
+                            </a> </h3>
+                    </div>
+                </div>
+                <div class="visit">
+                    <h3 class="title">Waiting for your visit</h3>
+                    <div class="info">
+                        <h3><img src="image/icons8-location-50.png" alt=""> Chattisgarh, Bilaspur, India - 495001</h3>
+                        <h3><img src="image/icons8-location-50.png" alt=""> Kuduadand Shiv Chowk, Chattisgarh, Bilaspur,
+                            India - 495001</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("header").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+
+        function closeNav() {
+            document.getElementById("header").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <scriptsrc="https: //code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
